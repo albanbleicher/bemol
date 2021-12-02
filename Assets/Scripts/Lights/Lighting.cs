@@ -14,7 +14,7 @@ public class Lighting : MonoBehaviour
         while (true) {
             yield return new WaitForSeconds(Random.Range(2,10));
             anim.Play();
-        }    
+        }
     }
 
     // Update is called once per frame
