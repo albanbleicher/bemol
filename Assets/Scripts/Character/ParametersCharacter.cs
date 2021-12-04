@@ -18,10 +18,12 @@ public class ParametersCharacter : MonoBehaviour
     IEnumerator FlashCharacter() {
         characterMaterial.DOColor(emissionIntensity * 4, "_EmissionColor", 0.2f);
         yield return new WaitForSeconds(0.2f);
-        characterMaterial.DOColor(emissionIntensity, "_EmissionColor", 0.8f);
+        characterMaterial.DOColor(Color.red, "_EmissionColor", 0.8f);
     }
 
     void onSmokeEnter() {
-        StartCoroutine(FlashCharacter());
+        Debug.Log("WESH");
+        characterMaterial.DOColor(Color.red, "_Color", 0.8f);
+        // StartCoroutine(FlashCharacter());
     }
 }
