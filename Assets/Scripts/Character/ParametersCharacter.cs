@@ -8,9 +8,11 @@ public class ParametersCharacter : MonoBehaviour
     // Start is called before the first frame update
     public Material characterMaterial;
     public Color emissionIntensity;
+	private Animation flashAnim;
 
     void Start() {
         characterMaterial = GetComponent<Renderer>().material;
+        flashAnim = GetComponent<Animation>();
         emissionIntensity = characterMaterial.GetColor("_EmissionColor");
         HandleColorSmoke.onSmokeEnter += onSmokeEnter;
     }
@@ -23,7 +25,8 @@ public class ParametersCharacter : MonoBehaviour
 
     void onSmokeEnter() {
         Debug.Log("WESH");
-        characterMaterial.DOColor(Color.red, "_Color", 0.8f);
+        flashAnim.Play();
+        // characterMaterial.DOColor(Color.red, "_EmissionColor", 10f);
         // StartCoroutine(FlashCharacter());
     }
 }
