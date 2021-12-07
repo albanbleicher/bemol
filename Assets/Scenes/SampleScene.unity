@@ -21131,7 +21131,6 @@ GameObject:
   - component: {fileID: 1506035063}
   - component: {fileID: 1506035062}
   - component: {fileID: 1506035061}
-  - component: {fileID: 1506035060}
   m_Layer: 5
   m_Name: ClickToBlow
   m_TagString: Untagged
@@ -21158,19 +21157,6 @@ RectTransform:
   m_AnchoredPosition: {x: 274, y: 49}
   m_SizeDelta: {x: 314.6945, y: 38.2872}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1506035060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506035058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed85e7a1580d62544adf21c86a86511d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: 
 --- !u!114 &1506035061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21183,7 +21169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed85e7a1580d62544adf21c86a86511d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: 
 --- !u!114 &1506035062
 MonoBehaviour:
   m_ObjectHideFlags: 0

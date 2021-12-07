@@ -10,6 +10,13 @@ public class Lighting : MonoBehaviour
 
     private Light FoudreLight;
 
+    public static Lighting Instance  {get; private set; }
+
+
+    private void Awake() {
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     IEnumerator Start()
     {
@@ -19,8 +26,9 @@ public class Lighting : MonoBehaviour
         FoudreLight.intensity = 0;
 
         while (true) {
-            yield return new WaitForSeconds(Random.Range(15,25));
-            Debug.Log("playFoudre");
+            yield return new WaitForSeconds(Random.Range(2,7));
+            // TO DO : Working that shit
+            // ShakingController.Instance.ShakeCamera(0.0f, 0.2f, .1f);
             anim.Play();
             yield return new WaitForSeconds(1.5f);
             thunderSound.Play();
