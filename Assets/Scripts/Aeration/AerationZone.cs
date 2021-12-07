@@ -9,6 +9,9 @@ public class AerationZone : MonoBehaviour
     public static AerationZone Instance  {get; private set; }
     public static bool queriesHitTriggers;
     public bool isOnZone;
+    public bool isOnMouseDown;
+    public bool FlashOnBlowCanPlay = true;
+    public float timer = 0f;
 
     private void Awake() {
         Instance = this;
@@ -16,21 +19,59 @@ public class AerationZone : MonoBehaviour
         queriesHitTriggers = true;
     }
 
+    private void Update () {
+        if (isOnMouseDown == true) {
+            timer += Time.deltaTime;
+        } else {
+            timer = 0f;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         onAerationZoneEnter();
         isOnZone = true;
-        ClickToBlowText.Instance.showText();
+        if (FlashOnBlowCanPlay == true) {
+            ClickToBlowText.Instance.showText();
+        }
     }
 
         private void OnTriggerExit(Collider other)
     {
         isOnZone = false;
-        ClickToBlowText.Instance.hideText();
+        if (FlashOnBlowCanPlay == true) {
+            ClickToBlowText.Instance.hideText();
+        }
+    }
+
+    void OnMouseDown() {
+        if (FlashOnBlowCanPlay == true) {
+            ParametersCharacter.Instance.playFlashOnBlow();
+        }
+        isOnMouseDown = true;
     }
 
     void OnMouseDrag() {
-        Debug.Log("mouse down");
-        ShakingController.Instance.ShakeCamera(0.0f, 0.2f, .1f);
+        if (FlashOnBlowCanPlay == true) {
+            ShakingController.Instance.ShakeCamera(0.0f, 0.2f, .1f);
+            if (timer >= 3) {
+                ClickToBlowText.Instance.hideText();
+            }
+        } else {
+            ShakingController.Instance.ShakeCamera(0.0f, 0f, 0f);
+        }
+
+    }
+
+    IEnumerator OnMouseUp() {
+        isOnMouseDown = false;
+        if (timer >= 3) {
+            yield return new WaitForSeconds(0.5f);
+            ParametersCharacter.Instance.RewindFlashAfterSuccess();
+            FlashOnBlowCanPlay = false;
+        } else if (FlashOnBlowCanPlay == true) {
+            Debug.Log("StopFlash");
+            StartCoroutine(ParametersCharacter.Instance.stopFlashOnBlow());
+        }
     }
 }

@@ -26,7 +26,7 @@ public class ClickToBlowText : MonoBehaviour
 
   public void hideText()
   {
-    text.CrossFadeAlpha(0, 0.5f, false);
+    text.CrossFadeAlpha(0, 0.1f, false);
   }
 
 }
