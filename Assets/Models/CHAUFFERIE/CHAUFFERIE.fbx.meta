@@ -8,37 +8,42 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: LAMP
-    second: {fileID: 2100000, guid: fc372c35554384a5a90c90f10b780021, type: 2}
+    second: {fileID: 2100000, guid: 0f03dbd3eba334ff98c064e205d3349d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 846fe0233fe4544bc809037791a784b6, type: 2}
+      name: Material
+    second: {fileID: 2100000, guid: 8cb090f72007d4337a19bd4273124bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: a1195b4c14d454389b93298c1b8d71f3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Plastic Black
-    second: {fileID: 2100000, guid: c250bfb41d61b4953bcaa45d0c93e611, type: 2}
+    second: {fileID: 2100000, guid: ac908fe77ab9a4cb28400700386871b4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Plastic Blue
-    second: {fileID: 2100000, guid: e9fb20eb8cbc541f699c208588478f7f, type: 2}
+    second: {fileID: 2100000, guid: 1896732d7464a4779976a1fefe618cb4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PlasticRed
-    second: {fileID: 2100000, guid: 1c8198a32e635429cb4f79bd3eeb2568, type: 2}
+    second: {fileID: 2100000, guid: 024320f2b8d7e461bad875280cf96127, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Structure
-    second: {fileID: 2100000, guid: c90eb1d0d4cd64d82b9af61c05ed43c3, type: 2}
+    second: {fileID: 2100000, guid: 1c0473c49aa7149fd875f1d6809c5383, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
