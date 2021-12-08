@@ -7,20 +7,29 @@ public class Movement : MonoBehaviour
     // Speed of Camera Movement
     private Animator animator;
     private NavMeshAgent agent;
+    public GameObject BeginCamera;
+    public GameObject SideCamera;
     public GameObject manivelle;
-    private float pitch = 0.0f;
-    float manivelleRotation = 0;
+
 
     void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        StartCoroutine(Begin());
+    }
 
+    IEnumerator Begin()
+    {
+        yield return new WaitForSeconds(5);
+        Debug.Log("Waited 5 seconds");
+        BeginCamera.SetActive(false);
+        SideCamera.SetActive(true);
     }
     // Update is called once per frame
     void Update()
     {
-        
+
         float x = Input.GetAxis("Horizontal") * 2f;
         float z = Input.GetAxis("Vertical");
 
@@ -29,7 +38,7 @@ public class Movement : MonoBehaviour
         agent.Move(move * Time.deltaTime);
         float speed = move.magnitude;
         animator.SetFloat("Speed", speed);
-        manivelle.transform.Rotate(0f, speed*2f, 0f);
-       
+        manivelle.transform.Rotate(0f, speed * 2f, 0f);
+
     }
 }
