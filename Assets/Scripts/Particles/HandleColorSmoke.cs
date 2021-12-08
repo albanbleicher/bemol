@@ -6,6 +6,7 @@ public class HandleColorSmoke : MonoBehaviour
 {
     public delegate void onSmokeEnterAction();
     public static event onSmokeEnterAction onSmokeEnter;
+    public AudioClip newTrack;
 
     // Material smokeMaterial;
     
@@ -19,6 +20,7 @@ public class HandleColorSmoke : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
+        AudioManager.Instance.SwapTrack(newTrack);
         onSmokeEnter();
     }
 }
