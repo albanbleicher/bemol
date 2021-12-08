@@ -15,6 +15,12 @@ ModelImporter:
   - first:
       74: -2274057556838919307
     second: metarig|Walk.001
+  - first:
+      74: -51352628408344578
+    second: metarig|Tpose (1)
+  - first:
+      74: -2591626515993949171
+    second: metarig|Walk (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -44,8 +50,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: metarig|Idole
-      takeName: metarig|Idole
+      name: metarig|Walk (1)
+      takeName: metarig|Walk
       internalID: 0
       firstFrame: 0
       lastFrame: 20
@@ -222,7 +228,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
