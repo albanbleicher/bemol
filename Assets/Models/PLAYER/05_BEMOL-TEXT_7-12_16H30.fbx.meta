@@ -16,9 +16,6 @@ ModelImporter:
       74: -2274057556838919307
     second: metarig|Walk.001
   - first:
-      74: -51352628408344578
-    second: metarig|Tpose (1)
-  - first:
       74: -2591626515993949171
     second: metarig|Walk (1)
   externalObjects: {}
@@ -62,7 +59,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
