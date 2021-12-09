@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ae95f1e3fa2c44ffe9cac2a81a6e1678
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gosha Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9fa4aa62ea9064b37962fedb7fbb65ad, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
