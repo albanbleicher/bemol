@@ -23,8 +23,8 @@ public class AudioManager : MonoBehaviour
         track02 = gameObject.AddComponent<AudioSource>();
         track01.loop = true;
         track02.loop = true;
-        track01.loop = 0.4f;
-        track02.loop = 0.4f;
+        track01.volume = 0.4f;
+        track02.volume = 0.4f;
     
         isPlayingTrack01 = true;
        
