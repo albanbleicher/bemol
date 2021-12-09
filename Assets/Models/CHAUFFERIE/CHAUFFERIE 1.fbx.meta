@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb1dfc71433074b43b06070b0edbddbe
+guid: b76e0f70f298f4c3eb9af7aeb23852f9
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -8,17 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: LAMP
-    second: {fileID: 2100000, guid: 0f03dbd3eba334ff98c064e205d3349d, type: 2}
+    second: {fileID: 2100000, guid: 89442c14eb5124ee9bb1fcb1d06d892f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: 8cb090f72007d4337a19bd4273124bc0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: a1195b4c14d454389b93298c1b8d71f3, type: 2}
+    second: {fileID: 2100000, guid: 13fedd197c4bd4c4085b5a331edd04d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -38,12 +33,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Structure
-    second: {fileID: 2100000, guid: 1c0473c49aa7149fd875f1d6809c5383, type: 2}
+    second: {fileID: 2100000, guid: 0c0a3c2c9d92f4fc7bebae8c4c97d50c, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
-    materialSearch: 2
-    materialLocation: 0
+    materialSearch: 1
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -79,8 +74,8 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     fileIdsGeneration: 2
-    swapUVChannels: 0
-    generateSecondaryUV: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -100,8 +95,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0

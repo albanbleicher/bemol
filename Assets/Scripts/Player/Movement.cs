@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
 
     IEnumerator Begin()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         Debug.Log("Waited 5 seconds");
         BeginCamera.SetActive(false);
         SideCamera.SetActive(true);
@@ -38,7 +38,10 @@ public class Movement : MonoBehaviour
         agent.Move(move * Time.deltaTime);
         float speed = move.magnitude;
         animator.SetFloat("Speed", speed);
-        manivelle.transform.Rotate(0f, speed * 2f, 0f);
+        if(speed>0) 
+        {
+        manivelle.transform.Rotate(0f, speed * 120f, 0f);
+        }
 
     }
 }

@@ -6,7 +6,9 @@ public class CameraSwitcher : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject HangarCamera;
-    public GameObject ThirdPersonCamera;
+    public GameObject FirstDoorCamera;
+    public GameObject ChaufferieCamera;
+    public GameObject InteractionCamera;
     void Start()
     {
         Debug.Log("Door init");
@@ -21,7 +23,12 @@ public class CameraSwitcher : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         Debug.Log("Coucou");
         HangarCamera.SetActive(false);
-        ThirdPersonCamera.SetActive(true);
+        FirstDoorCamera.SetActive(true);
+
+    }
+    void OnTriggerExit(Collider other) {
+        FirstDoorCamera.SetActive(false);
+        ChaufferieCamera.SetActive(true);
 
     }
 }
