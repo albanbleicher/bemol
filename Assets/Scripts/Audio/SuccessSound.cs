@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SuccessSound : MonoBehaviour
 {
-    public AudioClip successSound;
+    public AudioSource audio;
 
     public static SuccessSound Instance;
 
@@ -14,7 +14,11 @@ public class SuccessSound : MonoBehaviour
         }
     }
 
+    private void Start() {
+        audio = GetComponent<AudioSource>();
+    }
+
     public void Play() {
-        AudioManager.Instance.SwapTrack(successSound);
+        audio.Play();
     }
 }

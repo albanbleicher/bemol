@@ -16,23 +16,23 @@ public class OilTriggerManager : MonoBehaviour
         // flashBemol = GetComponent<Animation>();
 
         StartCoroutine(LaunchInteraction());
-        onOilEnter();
+        // LaunchInteraction();
+        // onOilEnter();
     }
 
     private IEnumerator LaunchInteraction() {
 
         if (interactionIsDone == false) {
             RepairSound.Instance.Play();
-            // flashBemol.Play();
             PlayerManager.Instance.Flash();
 
-            yield return new WaitForSeconds(1.9f);
-
+            yield return new WaitForSeconds(2f);
             SuccessSound.Instance.Play();
+            XyloSound.Instance.Play();
 
-            yield return new WaitForSeconds(1f);
+            // PlayerManager.Instance.StopFadeTrack();
 
-            AudioManager.Instance.SwapTrack(newTrack);
+            // AudioManager.Instance.SwapTrack(newTrack);
 
             interactionIsDone = true;
             Debug.Log("interactionDone");

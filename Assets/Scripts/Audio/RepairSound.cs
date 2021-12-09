@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RepairSound : MonoBehaviour
 {
-    public AudioClip repairSound;
-
     public static RepairSound Instance;
+    
+    public AudioClip repairSound;
 
     private void Awake() {
         if (Instance == null) {

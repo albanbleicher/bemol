@@ -24,6 +24,7 @@ public class CameraSwitcher : MonoBehaviour
         Debug.Log("Coucou");
         HangarCamera.SetActive(false);
         FirstDoorCamera.SetActive(true);
+        Lighting.Instance.setVolume(0.05f);
 
     }
     void OnTriggerExit(Collider other) {
