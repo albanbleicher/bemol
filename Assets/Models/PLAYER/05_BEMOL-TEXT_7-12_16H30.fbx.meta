@@ -18,7 +18,117 @@ ModelImporter:
   - first:
       74: -2591626515993949171
     second: metarig|Walk (1)
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bouton Manivelle
+    second: {fileID: 2100000, guid: dc1ac36dff7011a4ba4e964223a367ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 8786e80665b4fd447929282e265a3c68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: a1cc64791f5010149afcd142edb24a5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 03693c3d5be2eeb46a222969b03630cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: eeecdfc8de6b079498a90f7523a313b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-test-02
+    second: {fileID: 2100000, guid: 76703e9565f63c741b9db74e8112bb27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver
+    second: {fileID: 2100000, guid: 18950a0e46f79394284228a168b7c6cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.001
+    second: {fileID: 2100000, guid: 54d14891b3813e64c99df29ecb4b3669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.002
+    second: {fileID: 2100000, guid: 7f2d550561ece0546970e9097b46c463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.003
+    second: {fileID: 2100000, guid: 71ee5f980843fbd48b92025455cdefdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.004
+    second: {fileID: 2100000, guid: d24e6be7a60a7cc418ae221cb48ea730, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.005
+    second: {fileID: 2100000, guid: a8a62a459f1f0114792a6092eadca84c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup
+    second: {fileID: 2100000, guid: 3eb7d73d7f5e0a5438e4b1dfe0892251, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal002_2K_Color
+    second: {fileID: 2800000, guid: 9f764a031a102324fa929653238d2a35, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal002_2K_NormalDX
+    second: {fileID: 2800000, guid: b0632931067097641960a477a8e101c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal002_2K_Roughness
+    second: {fileID: 2800000, guid: 80c34165f8671f847bfd3934a557d6f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal033_1K_Color
+    second: {fileID: 2800000, guid: 8058907d4dbbb2b4daa418e659488292, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal033_1K_Roughness
+    second: {fileID: 2800000, guid: 5d6de439c8ac8ea48ac509ee2a9b2d8b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pipe002_2K_Color
+    second: {fileID: 2800000, guid: 0b61c9f4986752f4da5d52596dc8a4a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pipe002_2K_Metalness
+    second: {fileID: 2800000, guid: edb219e6e0f2069469fc14803440a26b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pipe002_2K_NormalDX
+    second: {fileID: 2800000, guid: da983f3f846a80b44a331c1d0f4742fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pipe002_2K_Roughness
+    second: {fileID: 2800000, guid: 487b1b19f34ed4845b462587d265dbaa, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
