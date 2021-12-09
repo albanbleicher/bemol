@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class OilTriggerManager : MonoBehaviour
 {
-    public delegate void onOilEnterAction();
-    public static event onOilEnterAction onOilEnter;
+    // public delegate void onOilEnterAction();
+    // public static event onOilEnterAction onOilEnter;
     public AudioClip newTrack;
     // private Animation flashBemol;
     private bool interactionIsDone = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("EnterOnCollider");
+        // Debug.Log("EnterOnCollider");
         // flashBemol = GetComponent<Animation>();
 
         StartCoroutine(LaunchInteraction());
@@ -28,7 +28,8 @@ public class OilTriggerManager : MonoBehaviour
 
             yield return new WaitForSeconds(2f);
             SuccessSound.Instance.Play();
-            XyloSound.Instance.Play();
+            yield return new WaitForSeconds(1.5f);
+            StartCoroutine(XyloSound.Instance.Play());
 
             // PlayerManager.Instance.StopFadeTrack();
 
