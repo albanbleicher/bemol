@@ -35,6 +35,10 @@ public class Lighting : MonoBehaviour
         }
     }
 
+    public void setVolume(float volume) {
+        thunderSound.volume = volume;
+    }
+
     // Update is called once per frame
     void Update()
     {

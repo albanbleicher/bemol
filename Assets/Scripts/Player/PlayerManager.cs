@@ -6,7 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
     private Animation flashAnimation;
-    private void Awake() {
+    public void Awake() {
         if (Instance == null) {
             Instance = this;
         }
