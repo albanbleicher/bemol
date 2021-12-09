@@ -25,7 +25,7 @@ public class ParametersCharacter : MonoBehaviour
         anim.AddClip(RewindFlashAfterSuccessClip, "RewindFlashAfterSuccessClip");
 
         // emissionIntensity = characterMaterial.GetColor("_EmissionColor");
-        HandleColorSmoke.onSmokeEnter += onSmokeEnter;
+        // HandleColorSmoke.onSmokeEnter += onSmokeEnter;
     }
 
     // IEnumerator FlashCharacter() {
@@ -34,10 +34,14 @@ public class ParametersCharacter : MonoBehaviour
     //     characterMaterial.DOColor(Color.red, "_EmissionColor", 0.8f);
     // }
 
-    void onSmokeEnter() {
+    // void onSmokeEnter() {
+    //     anim.Play("Flash");
+    //     // characterMaterial.DOColor(Color.red, "_EmissionColor", 10f);
+    //     // StartCoroutine(FlashCharacter());
+    // }
+
+    public void Flash() {
         anim.Play("Flash");
-        // characterMaterial.DOColor(Color.red, "_EmissionColor", 10f);
-        // StartCoroutine(FlashCharacter());
     }
 
     public void playFlashOnBlow(){

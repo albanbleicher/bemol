@@ -13,6 +13,8 @@ public class AerationZone : MonoBehaviour
     public bool FlashOnBlowCanPlay = true;
     public float timer = 0f;
 
+    // public AudioClip brokenMusicBox2;
+
     private void Awake() {
         Instance = this;
         isOnZone = false;
@@ -46,19 +48,25 @@ public class AerationZone : MonoBehaviour
 
     void OnMouseDown() {
         if (FlashOnBlowCanPlay == true) {
-            ParametersCharacter.Instance.playFlashOnBlow();
+            // ParametersCharacter.Instance.playFlashOnBlow();
+            // BemolManager.Instance.Flash();
         }
         isOnMouseDown = true;
     }
 
     void OnMouseDrag() {
         if (FlashOnBlowCanPlay == true) {
+            // RepairSound.Instance.Play();
             ShakingController.Instance.ShakeCamera(0.0f, 0.2f, .1f);
             if (timer >= 3) {
                 ClickToBlowText.Instance.hideText();
+                // SuccessSound.Instance.Play();
+                // yield return new WaitForSeconds(1f);
+                // AudioManager.Instance.SwapTrack(brokenMusicBox2);
             }
         } else {
             ShakingController.Instance.ShakeCamera(0.0f, 0f, 0f);
+            // yield return null;
         }
 
     }
@@ -67,11 +75,13 @@ public class AerationZone : MonoBehaviour
         isOnMouseDown = false;
         if (timer >= 3) {
             yield return new WaitForSeconds(0.5f);
-            ParametersCharacter.Instance.RewindFlashAfterSuccess();
+            // ParametersCharacter.Instance.RewindFlashAfterSuccess();
+            // BemolManager.Instance.Flash();
             FlashOnBlowCanPlay = false;
         } else if (FlashOnBlowCanPlay == true) {
-            Debug.Log("StopFlash");
-            StartCoroutine(ParametersCharacter.Instance.stopFlashOnBlow());
+            // Stop Repair Sound
+            // StartCoroutine(ParametersCharacter.Instance.stopFlashOnBlow());
+            // BemolManager.Instance.Flash();
         }
     }
 }
