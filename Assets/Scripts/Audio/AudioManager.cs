@@ -48,8 +48,8 @@ public class AudioManager : MonoBehaviour
             track02.Play();
 
             while (timeElapsed < timeToFade) {
-                track02.volume = Mathf.Lerp(0, 0.2f, timeElapsed / timeToFade);
-                track01.volume = Mathf.Lerp(0.2f, 0, timeElapsed / timeToFade);
+                track02.volume = Mathf.Lerp(0, 0.4f, timeElapsed / timeToFade);
+                track01.volume = Mathf.Lerp(0.4f, 0, timeElapsed / timeToFade);
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
@@ -58,8 +58,8 @@ public class AudioManager : MonoBehaviour
             track01.clip = newClip;
             track01.Play();
             while (timeElapsed < timeToFade) {
-                track02.volume = Mathf.Lerp(0.2f, 0, timeElapsed / timeToFade);
-                track01.volume = Mathf.Lerp(0, 0.2f, timeElapsed / timeToFade);
+                track02.volume = Mathf.Lerp(0.4f, 0, timeElapsed / timeToFade);
+                track01.volume = Mathf.Lerp(0, 0.4f, timeElapsed / timeToFade);
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
