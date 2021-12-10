@@ -12,7 +12,7 @@ public class FirstCollider : MonoBehaviour
     }
 
     void OnTriggerExit(Collider other) {
-        Debug.Log("trigger exit");
+        // Debug.Log("trigger exit");
         // SubtitlesManager.Instance.subtitles.text = "Mais qu'es-ce qu'il m'est arrivé ? Mon système ne fonctionne plus normalement.";
     }
 }
