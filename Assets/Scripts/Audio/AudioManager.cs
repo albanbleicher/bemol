@@ -73,12 +73,12 @@ public class AudioManager : MonoBehaviour
 
         if (isPlayingTrack01 == true) {
             while (timeElapsed < timeToFade) {
-                track01.volume = Mathf.Lerp(0.2f, 0, timeElapsed / timeToFade);
+                track01.volume = Mathf.Lerp(0.4f, 0, timeElapsed / timeToFade);
                 timeElapsed += Time.deltaTime;
             }
         } else {
             while (timeElapsed < timeToFade) {
-                track02.volume = Mathf.Lerp(0.2f, 0, timeElapsed / timeToFade);
+                track02.volume = Mathf.Lerp(0.4f, 0, timeElapsed / timeToFade);
                 timeElapsed += Time.deltaTime;
             }
         }

@@ -16,4 +16,12 @@ public class PlayerManager : MonoBehaviour
     public void Flash() {
         flashAnimation.Play();
     }
+
+    public IEnumerator Unflash() {
+    
+        flashAnimation.Rewind("FlashInstrument");
+        yield return new WaitForSeconds(0.01f);
+        flashAnimation.Stop();
+
+    }
 }

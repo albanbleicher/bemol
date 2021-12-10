@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4934605448467431243}
   - component: {fileID: 4934605448467431253}
   - component: {fileID: 4934605448467431242}
+  - component: {fileID: 8744549647400551683}
+  - component: {fileID: 8244334344209716758}
   m_Layer: 8
   m_Name: Poussiere
   m_TagString: Untagged
@@ -4804,3 +4806,34 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!65 &8744549647400551683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4934605448467431240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.386707, y: 4.7198515, z: 3.086907}
+  m_Center: {x: 0.20739357, y: 2.231517, z: -0.14463031}
+--- !u!114 &8244334344209716758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4934605448467431240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e5f347061ef044888b5c16353bef52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newTrack: {fileID: 8300000, guid: c5f97fe2c5e89443490475a18464cced, type: 3}
+  repairSound: {fileID: 8300000, guid: 6a88a51e849ce2c46ba8649f3aa4bb58, type: 3}
+  isOnZone: 0
+  isOnMouseDown: 0
+  FlashOnBlowCanPlay: 1
+  timer: 0

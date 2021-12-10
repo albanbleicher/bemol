@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RepairSound : MonoBehaviour
 {
+    private AudioSource audio;
+
     public static RepairSound Instance;
-    
-    public AudioClip repairSound;
 
     private void Awake() {
         if (Instance == null) {
@@ -14,7 +14,15 @@ public class RepairSound : MonoBehaviour
         }
     }
 
+    private void Start() {
+        audio = GetComponent<AudioSource>();
+    }
+
     public void Play() {
-        AudioManager.Instance.SwapTrack(repairSound);
+        audio.Play();
+    }
+
+    public void Stop() {
+        audio.Stop();
     }
 }
