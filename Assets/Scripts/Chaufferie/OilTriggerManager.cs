@@ -23,6 +23,7 @@ public class OilTriggerManager : MonoBehaviour
     private IEnumerator LaunchInteraction() {
 
         if (interactionIsDone == false) {
+            interactionIsDone = true;
             RepairSound.Instance.Play();
             PlayerManager.Instance.Flash();
 
@@ -30,12 +31,16 @@ public class OilTriggerManager : MonoBehaviour
             SuccessSound.Instance.Play();
             yield return new WaitForSeconds(1.5f);
             StartCoroutine(XyloSound.Instance.Play());
+            SubtitlesManager.Instance.hide();
+            yield return new WaitForSeconds(1.5f);
+            SubtitlesManager.Instance.show("Eh mais... je peux rejouer de mon xylo !");
+            yield return new WaitForSeconds(4f);
+            SubtitlesManager.Instance.hide();
 
             // PlayerManager.Instance.StopFadeTrack();
 
             // AudioManager.Instance.SwapTrack(newTrack);
 
-            interactionIsDone = true;
             Debug.Log("interactionDone");
         }
 

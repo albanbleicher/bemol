@@ -242,7 +242,7 @@ Material:
     - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 32
-    - _StencilWriteMask: 6
+    - _StencilWriteMask: 56.46
     - _StencilWriteMaskDepth: 8
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 14

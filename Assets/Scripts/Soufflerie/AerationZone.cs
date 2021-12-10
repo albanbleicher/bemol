@@ -50,7 +50,9 @@ public class AerationZone : MonoBehaviour
     }
 
     void OnMouseDown() {
-        if (FlashOnBlowCanPlay == true) {
+        Debug.Log("mouseDown");
+        if (FlashOnBlowCanPlay == true && isOnZone == true) {
+            Debug.Log("LaunchXyloAndFlash");
             XyloSound.Instance.Stop();
             PlayerManager.Instance.Flash();
             AudioManager.Instance.SwapTrack(repairSound);
@@ -100,5 +102,8 @@ public class AerationZone : MonoBehaviour
         SuccessSound.Instance.Play();
         yield return new WaitForSeconds(1.5f);
         AudioManager.Instance.SwapTrack(newTrack);
+        // yield return new WaitForSeconds(1.5f);
+        // SubtitlesManager.Instance.show("Ah, quel plaisir de le réentendre.");
+        
     }
 }
