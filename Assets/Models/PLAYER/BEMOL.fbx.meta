@@ -30,7 +30,102 @@ ModelImporter:
   - first:
       74: -2520397264377952867
     second: "Empty|Action.r\xE9parer (1)"
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bleu_Light
+    second: {fileID: 2100000, guid: 31cf5e82bf7494047b7561238bee1034, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bouton Manivelle
+    second: {fileID: 2100000, guid: bae5918255c4e441ebf4e6ee230d9f8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_Light
+    second: {fileID: 2100000, guid: 7cd660f9635c945d79769f7db4a712b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: dd6aa0c250ecd48428d090027d39712a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 88a730c29ec9744dfb3df1340f33053d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 5d799b09ffdcd4a2eaacb23edf1be3eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 112f5fff3dffc4362b9551ce3992b8f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 9f4e3c5046bfa4e8cbd5caba63a4f63e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: b3424f2ed352a4b35956f4478a69b3c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-test-02
+    second: {fileID: 2100000, guid: 12a4a9514697443a7b6ac65c8213518c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver
+    second: {fileID: 2100000, guid: 0d30b71b8deca4ff88e0fb62ace606ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.001
+    second: {fileID: 2100000, guid: 748a0fbce3a53411895f26337daf9f5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.002
+    second: {fileID: 2100000, guid: 3ce4724f686b44e089a308d49fc32cfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.003
+    second: {fileID: 2100000, guid: 6bbbb8c43ea6241b99e2ebe8b55e913d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.004
+    second: {fileID: 2100000, guid: 56af1f7f205724c1d989b8a34b6232fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_silver.005
+    second: {fileID: 2100000, guid: 16ce9e607923243e1bd1b0bdbcce7dc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_yellow
+    second: {fileID: 2100000, guid: 1fef3a1457da641a3a27fab9dc5b8c21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pink_Light
+    second: {fileID: 2100000, guid: 6e885d2cd2a4f406d81f8bcdaa13fc6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup
+    second: {fileID: 2100000, guid: fbac9e637d97f4d8ab049cb04e2171b8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

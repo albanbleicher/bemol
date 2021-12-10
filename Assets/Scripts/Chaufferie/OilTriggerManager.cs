@@ -33,7 +33,7 @@ public class OilTriggerManager : MonoBehaviour
             StartCoroutine(XyloSound.Instance.Play());
             SubtitlesManager.Instance.hide();
             yield return new WaitForSeconds(1.5f);
-            SubtitlesManager.Instance.show("Eh mais... je peux rejouer de mon xylo !");
+            SubtitlesManager.Instance.show("Eh mais... je peux rejouer du xylo !");
             yield return new WaitForSeconds(4f);
             SubtitlesManager.Instance.hide();
 

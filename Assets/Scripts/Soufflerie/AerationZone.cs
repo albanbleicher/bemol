@@ -82,7 +82,6 @@ public class AerationZone : MonoBehaviour
 
     void OnMouseUp() {
         isOnMouseDown = false;
-        Debug.Log(timer);
         if (timer >= 2) {
             // yield return new WaitForSeconds(1.5f);
             // StartCoroutine(TrompetteSound.Instance.Play());
@@ -100,7 +99,7 @@ public class AerationZone : MonoBehaviour
 
     IEnumerator PlayOnSuccess() {
         SuccessSound.Instance.Play();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         AudioManager.Instance.SwapTrack(newTrack);
         // yield return new WaitForSeconds(1.5f);
         // SubtitlesManager.Instance.show("Ah, quel plaisir de le réentendre.");

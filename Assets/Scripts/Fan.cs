@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fan : MonoBehaviour
 {
     // Start is called before the first frame update
-    float rot = 2f;
+    float rot = 0f;
     void Start()
     {
         
